@@ -32,7 +32,8 @@
     <script>
     window.onload = function() {
         const ui = SwaggerUIBundle({
-            url: "{{ url(config('l5-swagger.paths.docs_json', 'api-docs.json')) }}".replace('http:',
+            //url: "{{ url('docs') }}",
+            url: "{{ url(config('l5-swagger.paths.docs_json', 'docs')) }}".replace('http:',
                 'https:'),
             dom_id: '#swagger-ui',
             deepLinking: true,
